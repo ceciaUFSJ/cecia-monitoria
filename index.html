@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Monitoria – CECIA</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --cecia-red: #8b0000;
+  --text: #222;
+  --blue1: #007cf0;
+  --blue2: #00dfd8;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, Arial, sans-serif;
+  background: #fff;
+  color: var(--text);
+}
+
+/* ===== HEADER ===== */
+.header {
+  background: var(--cecia-red);
+  padding: 18px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.header-inner {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+
+.header img { height: 90px; }
+
+.title { text-align: center; }
+
+.course {
+  font-size: 32px;
+  font-weight: 700;
+  background: linear-gradient(90deg, var(--blue1), var(--blue2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cecia {
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.ufsj {
+  font-size: 14px;
+  color: #eee;
+}
+
+/* ===== CONTEÚDO ===== */
+.main {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 24px;
+}
+
+/* ===== TEXTO ===== */
+.datas {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 35px;
+}
+
+/* ===== BLOCOS ===== */
+.folder {
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.folder-header {
+  padding: 14px 18px;
+  background: var(--cecia-red);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.folder-content {
+  display: none;
+  padding: 12px 20px 18px;
+}
+
+.file {
+  padding: 6px 0;
+}
+
+.file a {
+  color: #0047ab;
+  text-decoration: none;
+}
+
+.file a:hover {
+  text-decoration: underline;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin: 60px 0 30px;
+}
+</style>
+</head>
+
+<body>
+
+<a href="https://cecia.ufsj.edu.br/" style="text-decoration:none; color:inherit;">
+  <div class="header">
+    <div class="header-inner">
+      <img src="https://cecia.ufsj.edu.br/assets/logo-ufsj-D8UfR3Y2.png" alt="UFSJ">
+
+      <div class="title">
+        <div class="course">Engenharia da Computação e Inteligência Artificial</div>
+        <div class="cecia">CECIA</div>
+        <div class="ufsj">Universidade Federal de São João del-Rei – UFSJ</div>
+      </div>
+
+      <img src="https://cecia.ufsj.edu.br/assets/mascote-labs-XYBaCOvj.png" alt="CECIA">
+    </div>
+  </div>
+</a>
+
+<div class="main">
+
+<!-- ===== TEXTO INSTITUCIONAL ===== -->
+<div class="datas">
+O <strong>Programa de Monitoria da UFSJ</strong> é uma ação da
+<strong>Pró-Reitoria de Ensino de Graduação (PROEN)</strong> para a melhoria do
+ensino por meio de práticas e experiências pedagógicas de compartilhamento do
+conhecimento, atuando como apoio pedagógico no âmbito das disciplinas dos cursos
+de graduação presenciais da UFSJ. A monitoria é exercida sob a orientação direta
+do docente responsável, com acompanhamento do coordenador do curso. Tanto o
+monitor bolsista quanto o voluntário recebem certificado de participação ao
+final da atividade.<br><br>
+
+Dúvidas poderão ser sanadas na página do
+<strong>Setor de Apoio Acadêmico (SEACA)</strong>, acessando:
+<a href="https://ufsj.edu.br/seaca/perguntas_frequentes.php" target="_blank">
+https://ufsj.edu.br/seaca/perguntas_frequentes.php</a>, ou por meio de contato por
+e-mail.<br><br>
+
+As atividades de monitoria semestrais poderão ser contabilizadas para cômputo de
+<strong>atividades complementares</strong>, em conformidade com o Projeto
+Pedagógico de cada curso. A pontuação em créditos é cadastrada conforme informado
+na aba <strong>Atividade Complementar</strong> na página de cada curso do CAP.<br><br>
+
+Ao término da monitoria, o aluno receberá <strong>atestado de monitoria</strong>,
+desde que observadas as orientações previstas nos editais, incluindo o envio da
+documentação necessária à certificação. Os atestados de monitoria são documentos
+que contribuem para o enriquecimento do currículo discente.
+</div>
+
+<h2>Monitoria</h2>
+<div id="monitoria">Carregando informações de monitoria...</div>
+
+<!-- ===== TEXTO FINAL ===== -->
+<div class="datas">
+<strong>Certificação</strong><br><br>
+
+Os certificados para discente monitor e/ou docente orientador serão emitidos
+posteriormente ao envio do <strong>Relatório de Monitoria</strong>, devidamente
+assinado e preenchido por ambos, conforme orientações estabelecidas nos editais
+vigentes.<br><br>
+
+Para acesso ao <strong>modelo de Relatório de Monitoria</strong>,
+<a href="https://ufsj.edu.br/portal2-repositorio/File/seaca/Monitoria-relatorio(2).doc" target="_blank">
+clique aqui
+</a>.
+</div>
+
+</div>
+
+<!-- ================= MONITORIA (GOOGLE DRIVE) ================= -->
+<script>
+const API_KEY = "AIzaSyACMK-L2y2-ZyJkwSkuu992Zug1dPFZgQM";
+const ROOT_FOLDER_MONITORIA = "1NoDtLAyrVA3ELN4kCXyYjl_9J2LIOOOs";
+
+async function driveApi(q) {
+  const url =
+    `https://www.googleapis.com/drive/v3/files?q=${encodeURIComponent(q)}&fields=files(id,name,mimeType)&supportsAllDrives=true&includeItemsFromAllDrives=true&key=${API_KEY}`;
+  const r = await fetch(url);
+  return (await r.json()).files || [];
+}
+
+async function carregarMonitoria() {
+  const container = document.getElementById("monitoria");
+  container.innerHTML = "";
+
+  let pastas = await driveApi(
+    `'${ROOT_FOLDER_MONITORIA}' in parents and mimeType='application/vnd.google-apps.folder'`
+  );
+
+  pastas.sort((a,b) =>
+    a.name.localeCompare(b.name, "pt-BR", { sensitivity: "base" })
+  );
+
+  pastas.forEach(async (pasta) => {
+    const aberta = false; // todas fechadas por padrão
+
+    const box = document.createElement("div");
+    box.className = "folder";
+
+    const h = document.createElement("div");
+    h.className = "folder-header";
+    h.innerHTML = `📁 ${pasta.name} <span>▶</span>`;
+
+    const c = document.createElement("div");
+    c.className = "folder-content";
+    c.style.display = "none";
+
+    const arquivos = await driveApi(
+      `'${pasta.id}' in parents and mimeType!='application/vnd.google-apps.folder'`
+    );
+
+    arquivos
+      .sort((a,b)=>a.name.localeCompare(b.name,"pt-BR",{sensitivity:"base"}))
+      .forEach(a => {
+        c.innerHTML += `
+          <div class="file">
+            📄 <a target="_blank" href="https://drive.google.com/file/d/${a.id}/view">${a.name}</a>
+          </div>`;
+      });
+
+    h.onclick = () => {
+      const open = c.style.display === "block";
+      c.style.display = open ? "none" : "block";
+      h.querySelector("span").textContent = open ? "▶" : "▼";
+    };
+
+    box.appendChild(h);
+    box.appendChild(c);
+    container.appendChild(box);
+  });
+}
+
+carregarMonitoria();
+</script>
+
+<!-- ================= DATA DE ATUALIZAÇÃO ================= -->
+<script>
+const DOC_DATA_ATUALIZACAO =
+  "https://docs.google.com/document/d/1VRDZezwKH-oQK3B0kY-1SZZYIQ7ENjp6/export?format=txt";
+
+async function carregarDataAtualizacao() {
+  try {
+    const res = await fetch(DOC_DATA_ATUALIZACAO);
+    let texto = (await res.text()).trim();
+    texto = texto.split(/\r?\n/).filter(l => l.trim()).join(" ");
+    document.getElementById("data-atualizacao").innerHTML =
+      "<strong>Última atualização:</strong> " + texto;
+  } catch {
+    document.getElementById("data-atualizacao").textContent =
+      "Última atualização: informação indisponível.";
+  }
+}
+
+carregarDataAtualizacao();
+</script>
+
+<div class="footer">
+  Página institucional mantida pela Coordenação do Curso – CECIA / UFSJ.<br>
+  <span id="data-atualizacao">Carregando data da última atualização...</span>
+</div>
+
+</body>
+</html>
