@@ -489,15 +489,21 @@ carregarMonitoria();
 <!-- ================= DATA DE ATUALIZAÇÃO ================= -->
 <script>
 const DOC_DATA_ATUALIZACAO =
-  "https://docs.google.com/document/d/1VRDZezwKH-oQK3B0kY-1SZZYIQ7ENjp6/export?format=txt";
+  "https://docs.google.com/document/d/1cVhOm51CVth4AYJnCzXiiMXhsH9BU2e7/export?format=txt";
 
 async function carregarDataAtualizacao() {
   try {
     const res = await fetch(DOC_DATA_ATUALIZACAO);
     let texto = (await res.text()).trim();
-    texto = texto.split(/\r?\n/).filter(l => l.trim()).join(" ");
+
+    texto = texto
+      .split(/\r?\n/)
+      .filter(l => l.trim())
+      .join(" ");
+
     document.getElementById("data-atualizacao").innerHTML =
       "<strong>Última atualização:</strong> " + texto;
+
   } catch {
     document.getElementById("data-atualizacao").textContent =
       "Última atualização: informação indisponível.";
@@ -506,6 +512,8 @@ async function carregarDataAtualizacao() {
 
 carregarDataAtualizacao();
 </script>
+
+  
 
 <div class="footer">
   Página institucional mantida pela Coordenação do Curso – CECIA / UFSJ.<br>
